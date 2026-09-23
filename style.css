@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(181, 185, 189);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding: 15px 40px;
+
+    box-sizing: border-box;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    color: green;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.logo:hover {
+    color: #ffd700;
+}
+
+.nav-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 100px;
+}
+
+.nav-link {
+    color: green;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffd700;
+}
+
+header {
+    padding-top: 80px;
+    padding-left: 40px;
+}
+
+.cap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px 40px;
+    padding-top: 80px;
+    background: #f5f5f5;
+
+}
+
+.cap p {
+    text-align: center;
+    color: grey;
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.cap-img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px;
+}
+
+.cap .btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 36px;
+    background: green;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px;
+}
+
+.cap .btn:hover {
+    background: #046221;
+    box-shadow: 0 6px 16px green;
+    transform: scale(1.1);
+}
+
+main {
+    background: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px 40px;
+    padding-top: 80px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+main p {
+    background: rgba(0, 128, 0, 0.328);
+    padding: 10px 10px 10px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.main-img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+main h2 {
+    font-size: 30px;
+    margin: 50px;
+}
+
+.sergey {
+    border-radius: 50%;
+}
+
+.calc {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    background: #f0f0f0;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid green;
+}
+
+.calc-label {
+    font-size: 15px;
+    font-weight: bold;
+    color: green;
+    margin-bottom: 8px;
+    margin-top: 18px;
+}
+
+.calc-label:first-of-type {
+    margin-top: 0;
+}
+
+.calc-input {
+    padding: 12px 14px;
+    font-size: 16px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    background: white;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    font-family: inherit;
+}
+
+.calc-input:focus {
+    outline: none;
+    border-color: green;
+}
+
+.calc-result {
+    margin-top: 25px;
+    padding: 20px;
+    background: #e6f5e6;
+    border-radius: 12px;
+    text-align: center;
+    border: 2px dashed green;
+    animation: fadeIn 0.4s ease;
+}
+
+.calc-result p {
+    margin: 0 0 15px;
+    font-size: 20px;
+    color: grey;
+    background: none;
+    padding: 0;
+    border: none;
+}
+
+#price {
+    font-size: 26px;
+    font-weight: bold;
+    color: green;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 36px;
+    background: green;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px grey;
+}
+
+.btn:hover {
+    background: darkgreen;
+    box-shadow: 0 6px 20px grey;
+    transform: scale(1.05);
+}
+
+.btn-confirm {
+    background: darkgreen;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">GpsNav</a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="about.html" class="nav-link">О нас</a>
+            <a href="service.html" class="nav-link">Услуги</a>
+        </div>
+    </nav>
+
+    <main class="page-service">
+        <h2>Рассчитать стоимость</h2>
+
+        <form class="calc" id="calcForm">
+
+            <!-- 1. Вид транспорта -->
+            <label class="calc-label">Вид транспорта</label>
+            <select id="transport" class="calc-input">
+                <option value="passenger">Легковой</option>
+                <option value="truck">Грузовой</option>
+                <option value="bus">Пассажирский</option>
+                <option value="special">Спецтехника</option>
+            </select>
+
+            <!-- 2. Количество машин -->
+            <label class="calc-label">Сколько у вас машин?</label>
+            <select id="count" class="calc-input">
+                <option value="small">До 10</option>
+                <option value="medium">10–100</option>
+                <option value="large">100–500</option>
+                <option value="xlarge">500+</option>
+            </select>
+
+            <!-- 3. Услуга -->
+            <label class="calc-label">Какая услуга нужна?</label>
+            <select id="service" class="calc-input">
+                <option value="tracking">Отслеживание местоположения</option>
+                <option value="routes">Планирование маршрутов</option>
+            </select>
+
+            <!-- Кнопка "Рассчитать" -->
+            <button type="button" id="calcBtn" class="btn">Рассчитать</button>
+
+            <!-- Результат -->
+            <div class="calc-result" id="result" style="display: none;">
+                <p>Стоимость: <span id="price">0</span> ₽ / мес.</p>
+                <button type="submit" class="btn btn-confirm">Подтвердить</button>
+            </div>
+
+        </form>
+    </main>
+
+    <script src="scripts/calc.js"></script>
+</body>
+
+</html>
